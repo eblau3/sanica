@@ -1,16 +1,5 @@
 @use '../../global' as *;
 
 .p-block {
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
   color: color('black');
-  letter-spacing: normal;
-  background-color: color('white');
-  opacity: 9;
-  transition: all 0.2s easing('ease-in-expo');
-  transform: translate(0);
-  @include font-size(lg);
 }
