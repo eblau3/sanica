@@ -1,0 +1,28 @@
+@use '../../../global' as *;
+
+// gap
+@include responsive using ($prefix) {
+  @each $name, $value in $spacing {
+    .#{$prefix}u-gap-#{$name} {
+      gap: spacing($name) !important;
+    }
+  }
+}
+
+// row-gap
+@include responsive using ($prefix) {
+  @each $name, $value in $spacing {
+    .#{$prefix}u-row-gap-#{$name} {
+      row-gap: spacing($name) !important;
+    }
+  }
+}
+
+// col-gap
+@include responsive using ($prefix) {
+  @each $name, $value in $spacing {
+    .#{$prefix}u-col-gap-#{$name} {
+      gap: spacing($name) !important;
+    }
+  }
+}
